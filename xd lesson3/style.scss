@@ -1,0 +1,240 @@
+@charset "UTF-8";
+
+/** {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  html, body, h2,h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, div, span, img, a, table, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: normal;
+    font-size: 100%;
+    vertical-align: baseline;
+  }
+  
+  header, footer, nav, section, article, aside, figure, figcaption {
+    display: block;
+  }
+  
+  body {
+    line-height: 1;
+
+  }
+  
+  ol, ul {
+    list-style: none;
+    list-style-type: none;
+  }
+
+$main-color:#3F51B5;
+h1{
+    margin: 100px;
+    font-family: Yu Gothic;
+}
+.header{
+    background: skyblue;
+}
+.main{
+    background-image: url(mainvisual.png);
+    background-size: cover;
+}
+.patern1{
+    border-bottom: 3px solid $main-color;
+    padding-bottom: 15px;
+}
+.patern2{
+    padding-bottom: 15px;
+    border-bottom: 3px dashed $main-color;
+}
+.patern3{
+    background-color: $main-color;
+    color: white;
+    padding:10px 5px;
+    text-align: center;
+}
+.patern4{
+    background-color: #7385E9;
+    color: white;
+    padding: 10px;
+    filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.6));
+}
+.patern5{
+    font-size: 50px;
+    font-weight: bold;
+    filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.6));
+}
+.patern6{
+    border-left: 5px solid $main-color ;
+    padding-left: 10px;
+    font-size: 45px;
+}
+.patern7{
+    background: linear-gradient(transparent 50%, yellow 50%);
+    padding-right: 0px;
+}
+.patern8{
+    background: linear-gradient(transparent 0%, rgba(0, 255, 30, 0.551) 0%);
+    padding: 10px;
+}
+
+.hello {
+    margin: 100px;
+    position: relative;
+    display: inline-block;
+    min-width: 120px;
+    max-width: 100%;
+    color: white;
+    font-size: 16px;
+    background:$main-color;
+    border-radius: 30px;
+  h1{
+    margin: 20px;
+
+  }
+  
+  &:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    margin-left: -30px;
+    border: 15px solid transparent;
+    border-top: 15px solid $main-color;
+  }
+}  
+
+.patern10{
+    border-bottom: 3px solid $main-color;
+    position: relative;
+    padding-bottom: 15px;
+    &:before{
+        content: "";
+        display: block;
+        line-height: 0;
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        bottom: -2.7px;
+        width: 30%;
+        border-bottom: 3px solid red;
+    }
+}
+.patern11{
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+
+   
+    &::before{
+        content: "";
+        flex-grow: 1;
+        height: 1px;
+        background: #000;
+        display: block;
+        margin-right: 30px;
+        background: linear-gradient(-90deg, #888, transparent);
+    }
+    &::after{
+        content: "";
+        flex-grow: 1;
+        height: 1px;
+        background: #000;
+        display: block;
+        margin-left: 30px;
+        background: linear-gradient(90deg, #888, transparent);
+    }
+}
+.patern12{
+    &::before{
+        background: linear-gradient(45deg, transparent, transparent 50%, black 50%, black 51%, transparent 51%, transparent);
+    }
+    &::after{
+        
+    }
+    
+}
+.patern13{
+
+}
+.patern14{
+
+}
+.patern15{
+
+}
+.patern16{
+
+}
+.patern17{
+
+}
+.patern18{
+
+}
+.patern19{
+
+}*/
+
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.body{
+    height: auto;
+    width: 100%;
+}
+.header{
+    width: 100%;
+    height: 600px;
+    background: skyblue;
+}
+.clear{
+    clear: both;
+}
+.drawer{
+    width: 100%;
+    height: auto;
+    background: skyblue;
+}
+.drawer-toggle{
+    color: white;
+}
+.sr-only{
+    color: white;
+}
+.drawer-hamburger-icon{
+    color: white;
+}
+.drawer-nav{
+    background: skyblue;
+}
+.drawer-menu-item{
+    color: white;
+    font-weight: bold;
+    font-size: 26px;
+}
+.main{
+    width: 100%;
+    height: auto;
+    background-image: url(mainvisual.png);
+    background-size: cover;
+    font-size: 32px;
+    font-weight: bold;
+
+}
+.content{
+    width: 100%;
+    height: auto;
+    padding: 100px;
+    margin: 100px;
+}
+ .main-item{
+     margin: 100px;
+     color: black;
+     font-size: 26px;
+     font-weight: bold;
+     border: 5px solid black;
+ }
